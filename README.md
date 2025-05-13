@@ -1,37 +1,18 @@
-# 🐳 App Full-Stack con Docker (Frontend + Backend)
+# 🐳 Docker Full-Stack Application
 
-Questo progetto è una semplice applicazione full-stack containerizzata, composta da un **frontend** e un **backend**, gestiti tramite Docker e Docker Compose.
+Questo progetto è una **web application full-stack** che utilizza **Docker** per eseguire sia il **frontend** che il **backend** in container separati, gestiti tramite **Docker Compose**. 
 
----
+## 🧑‍💻 Cosa fa il progetto?
 
-## 📁 Struttura del progetto
+Questa applicazione è composta da due parti principali:
 
-.
-├── backend/ # Contiene il backend Node.js
-│ ├── package.json
-│ └── server.js
-├── frontend/ # Contiene i file del frontend (HTML/JS o React)
-│ └── index.html
-├── Dockerfile # Dockerfile multi-stage per backend e frontend
-└── docker-compose.yml
+- **Backend**: un'applicazione Node.js che fornisce un'API. Si occupa di gestire le richieste HTTP e restituire dati o rispondere alle operazioni.
+- **Frontend**: un'applicazione web che comunica con il backend per visualizzare i dati. Può essere un'applicazione HTML semplice o un'app React.
 
+Entrambe le applicazioni sono containerizzate utilizzando Docker, e la configurazione dei container è gestita tramite **Docker Compose**.
 
----
+## 🚀 Funzionalità principali
 
-## 🚀 Come avviare il progetto
-
-### ✅ Prerequisiti
-
-- [Docker](https://www.docker.com/) installato
-- [Docker Compose](https://docs.docker.com/compose/) installato
-
-### ▶️ Comandi
-
-1. Clona il repository:
-
-```bash
-git clone https://github.com/tuo-username/nome-repository.git
-cd nome-repository
-
-docker-compose up --build
-
+- **Frontend**: un'interfaccia web che può essere servita tramite Nginx o un'app React.
+- **Backend**: un'applicazione Node.js che espone una semplice API per il frontend.
+- **Docker**: ciascun servizio è eseguito in un container isolato, garantendo un ambiente consistente e facilmente configurabile su qualsiasi sistema.
